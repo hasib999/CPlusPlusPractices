@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1648674323 source:c:\users\hasib\desktop\cpluspluspractices\reverse array\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+
