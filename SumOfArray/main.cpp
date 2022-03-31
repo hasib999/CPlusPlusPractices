@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int SumOfArray(int arr[],int arrSize)
@@ -10,6 +10,9 @@ int SumOfArray(int arr[],int arrSize)
         sum = sum+arr[i];
     }
     return sum;
+}
+int SumOfArrayBuiltInFunction(int arr[],int arrSize){
+    return accumulate(arr,arr+arrSize,0);
 }
 int main()
 {
@@ -22,6 +25,7 @@ int main()
     {
         cin>>arr[i];
     }
-    cout<<"Sum of Array is: "<<SumOfArray(arr,arrSize);
+    cout<<"Sum of Array is: "<<SumOfArray(arr,arrSize)<<endl;
+    cout<<"Sum of Array using Built in Function: "<<SumOfArrayBuiltInFunction(arr,arrSize);
     return 0;
 }
